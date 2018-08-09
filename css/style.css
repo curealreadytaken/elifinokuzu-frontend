@@ -36,7 +36,6 @@ header ul li {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 42% 16% 42%;
-  grid-auto-rows: minmax(50px, auto);
 }
 
 header .container {
@@ -122,6 +121,8 @@ section .container {
   padding-bottom: 20px;
   padding-right: 10px;
   padding-left: 10px;
+  position: relative;
+  background-color: #fff;
 }
 
 .sidebar-footer p {
@@ -133,7 +134,7 @@ section .container {
   margin-top: 20px;
 }
 
-.sidebar-footer ul li {
+.sidebar-footer .social-media li {
   display: inline-block;
   margin-right: 10px;
 }
@@ -144,11 +145,15 @@ section .container {
 }
 
 .login {
-  margin-top: 10px;
   border: 1px solid #707070;
   border-radius: 5px;
   padding-right: 5%; 
   padding-left: 5%; 
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #fff;
+  display: none;
 }
 
 .login ul li {
@@ -164,16 +169,9 @@ section .container {
   border-radius: 5px;
 }
 
-.login .remember {
-  font-size: 12px;
-}
-
-.login .remember input {
-  height: 10px;
-}
 
 .btnLogin {
-  width: 200px;
+  width: 100%;
   height: 40px;
   border-radius: 25px;
   background-color: #0A1F2D;
@@ -187,7 +185,7 @@ section .container {
 }
 
 .btnSignup {
-  width: 200px;
+  width: 100%;
   height: 40px;
   border-radius: 25px;
   background-color: #0A1F2D;
@@ -201,11 +199,15 @@ section .container {
 }
 
 .signup {
-  margin-top: 10px;
   border: 1px solid #707070;
   border-radius: 5px;
   padding-left: 5%;
   padding-right: 5%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #fff;
+  display: none;
 }
 
 .signup ul li {
@@ -221,7 +223,7 @@ section .container {
   border-radius: 5px;
 }
 
-.signup .tipList{
+.signup .tips{
   font-size: 10px;
 }
 
