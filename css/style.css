@@ -1,79 +1,73 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: Helvetica, sans-sans-serif;
   font-size: 14px;
 }
 
-.clear{
+body a {
+  text-decoration: none;
+}
+
+.clear {
   clear: both;
 }
 
-
-header{
-  height: 80px;
+header {
+  height: 50px;
   background-color: #34495E;
 }
 
-header a{
+header a {
   color: #fff;
-  font-size: 24px;
   text-decoration: none;
   font-weight: bold;
 }
 
-header ul li{
+header ul li {
   display: inline-block;
-  float: left;
-  margin-left: 18px;
+  margin-left: 10px;
 }
 
-
-.container{
-  width: 1620px;
+.container {
+  width: 1020px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 42% 16% 42%;
 }
 
-header .container{
+header .container {
   height: 100%;
-
 }
 
-[class^="header-"]{
-
-
+.header-content {
+  line-height: 50px;
 }
 
-.header-content{
-  line-height: 80px;
-}
-
-.header-middle{
+.header-middle {
   text-align: center;
 }
 
-.header-middle img{
-  width: 50px;
-  height: 50px;
+.header-middle img {
+  width: 30px;
+  height: 30px;
   border-radius: 3px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
-.header-right ul{
+.header-right ul {
   float: right;
 }
 
-.header-right ul li{
-  margin-right: 18px;
+.header-right ul li {
+  margin-right: 10px;
 }
 
-.header-right ul li input{
-  height: 35px;
-  width: 250px;
+.header-right ul li input {
+  height: 27px;
+  width: 200px;
   padding: 10px 15px;
   font-size: 14px;
   border: none;
@@ -81,9 +75,156 @@ header .container{
   background-color: #0A1F2D;
   color: #fff;
   background-image: url("../img/search.png");
-    background-position: 94% center;
-    background-repeat: no-repeat;
-    background-size: 20px;
+  background-position: 94% center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+section .container {
+  grid-template-columns: 25% 50% 25%;
+  margin-top: 10px;
+  align-items: start;
+}
+
+.sidebar-languages {
+  border: 1px solid #707070;
+  border-radius: 5px;
+}
+
+.sidebar-languages h1 {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar-languages ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-languages li {
+  margin-left: 10px;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+.sidebar-languages li a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar-footer {
+  border: 1px solid #707070;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  position: relative;
+  background-color: #fff;
+}
+
+.sidebar-footer p {
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+.sidebar-footer ul {
+  margin-top: 20px;
+}
+
+.sidebar-footer .social-media li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sidebar-footer img {
+  width: 50px;
+  height: 50px;
+}
+
+.login {
+  border: 1px solid #707070;
+  border-radius: 5px;
+  padding-right: 5%; 
+  padding-left: 5%; 
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #fff;
+  display: none;
+}
+
+.login ul li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.login ul li input {
+  height: 27px;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+}
+
+
+.btnLogin {
+  width: 100%;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #0A1F2D;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btnSignup {
+  width: 100%;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #0A1F2D;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup {
+  border: 1px solid #707070;
+  border-radius: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #fff;
+  display: none;
+}
+
+.signup ul li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.signup ul li input {
+  height: 27px;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+}
+
+.signup .tips{
+  font-size: 10px;
 }
 
 /*
