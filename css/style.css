@@ -156,6 +156,10 @@ section .container {
   display: none;
 }
 
+.is-visible {
+	display: block;
+}
+
 .login ul li {
   margin-top: 20px;
   margin-bottom: 20px;
