@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h2>Modal Login Form</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Submit</button>
+    <div id="id01" class="modal">
+        <div class="submit animate">
+            <form action="" method="post">
+                <div class="submit-header">
+                    <div>
+                        <h3>Submit</h3>
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+                </div>
+                <div class="submit-body">
+                    <div>
+
+                        <input type="text" placeholder="Source Node">
+                    </div>
+                    <div class="example" minlength="4" maxlength="8">Example: Elif in Turkish Language</div>
+                    <span class="validity"></span>
+                    <div>
+                        <select>
+                            <option value="description" selected>Source language</option>
+                            <option value="turkish">Turkish</option>
+                            <option value="english">English</option>
+                            <option value="arabic">Arabic</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Target Node">
+                    </div>
+                    <div class="example" dir="auto">Example: Alpha in Ancient Greek</div>
+                    <div>
+                        <select>
+                            <option value="description" selected>Target language</option>
+                            <option value="turkish">Turkish</option>
+                            <option value="english">English</option>
+                            <option value="arabic">Arabic</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <h4>Type of Edge:</h4>
+                        <label class="radio-container">
+                            <input type="radio" name="typeOfEdge" value="derivesFrom" checked="checked"> Derives from
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="typeOfEdge" value="symbolOf"> Symbol of
+                        </label>
+                        <label class="radio-container">
+                            <input type="radio" name="typeOfEdge" value="compoundOf"> Compound of
+                        </label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Resource">
+                    </div>
+                    <div class="example" dir="auto">Example: Sevan Nişanyan's Elifin Öküzü.</div>
+                </div>
+                <div class="submit-footer">
+                    <div>
+                        <button type="reset">Reset</button>
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

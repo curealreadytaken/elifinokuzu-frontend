@@ -147,8 +147,8 @@ section .container {
 .login {
   border: 1px solid #707070;
   border-radius: 5px;
-  padding-right: 5%; 
-  padding-left: 5%; 
+  padding-right: 5%;
+  padding-left: 5%;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -157,7 +157,7 @@ section .container {
 }
 
 .is-visible {
-	display: block;
+  display: block;
 }
 
 .login ul li {
@@ -172,7 +172,6 @@ section .container {
   border: 1px solid #707070;
   border-radius: 5px;
 }
-
 
 .btnLogin {
   width: 100%;
@@ -227,22 +226,194 @@ section .container {
   border-radius: 5px;
 }
 
-.signup .tips{
+.signup .tips {
   font-size: 10px;
 }
 
-/*
-.gr-2{
-  width: 16.6%;
-  float: left;
-  margin-left: .07%;
-}
-.gr-5{
-  width: 41.6%;
-  float: left;
-  margin-left: .07%;
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
-.gr-5:first-of-type{
+.submit {
+  width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100%;
+  border: 1px solid #707070;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Helvetica Neue", sans-sans-serif;
+  background-color: #fefefe;
+}
 
-} */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.right {
+  text-align: right;
+}
+
+.submit-header {
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #34495E;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+}
+
+.submit-header .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.submit-header h3 {
+  width: 75%;
+  padding: 10px 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.submit-body {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+}
+
+.submit-body input[type=text] {
+  width: 100%;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-style: solid;
+  font-weight: 400;
+  font-size: 19px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  overflow-wrap: break-word;
+  line-height: 1.3125;
+}
+
+input:invalid+span:after {
+  content: '✖';
+  border-bottom-color: rgb(224, 36, 94);
+}
+
+input:valid+span:after {
+  content: '✓';
+  color: #34495E;
+}
+
+.submit-body .example {
+  line-height: calc(19.6875px);
+  font-size: 13px;
+  color: #707070;
+  text-align: right;
+  font-weight: 400;
+}
+
+.submit-body select {
+  width: 100%;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.submit-body h4 {
+  font-weight: 400;
+  font-size: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.submit-body .radio-container {
+  display: inline;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.submit-footer {
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+.submit-footer button {
+  width: 90px;
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 16px;
+  border: 1px solid #34495E;
+  background-color: #34495E;
+  color: #fff;
+  margin-bottom: 10px;
+}
