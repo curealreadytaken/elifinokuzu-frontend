@@ -40,10 +40,12 @@
               <input type="text" placeholder="Search">
             </li>
             <li>
-              <a id="signup" href="">Sign up</a>
+              <a id="signup" href="#">Sign up</a>
+              <a id="submit" href="#">Submit</a>
             </li>
             <li>
-              <a id="login" href="">Log in</a>
+              <a id="login" href="#">Log in</a>
+              <a id="name" href="#">Ömer</a>
             </li>
           </ul>
           <div class="clear"></div>
@@ -100,7 +102,7 @@
             </a>
           </li>
         </ul>
-        <div id="divSignup" class="signup is-visible">
+        <div id="divSignup" class="signup">
           <ul>
             <li>
               <input type="text" placeholder="username">
@@ -122,12 +124,12 @@
             </li>
 
             <li>
-              <button class="btnSignup">Sign up</button>
+              <button id="btnSignup" class="btnSignup" type="submit">Sign up</button>
             </li>
           </ul>
         </div>
         <!-- signup -->
-        <div id="divLogin" class="login is-visible">
+        <div id="divLogin" class="login">
           <ul>
             <li>
               <input type="text" placeholder="username or email">
@@ -144,16 +146,79 @@
             </li>
 
             <li>
-              <button class="btnLogin">Log in</button>
+              <button id="btnLogin" class="btnLogin" type="submit">Log in</button>
             </li>
           </ul>
-        </div><!-- login -->
+        </div>
+        <!-- login -->
       </div>
       <!-- sidebar-footer -->
 
     </div>
     <!-- container -->
   </section>
+  <div id="id01" class="modal">
+    <div class="submit animate">
+      <form action="" method="post">
+        <div class="submit-header">
+          <div>
+            <h3>Submit</h3>
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+        </div>
+        <div class="submit-body">
+          <div>
+            <input type="text" placeholder="Source Node">
+          </div>
+          <div class="example">Example: Elif in Turkish Language</div>
+          <div>
+            <select>
+              <option value="description" selected>Source language</option>
+              <option value="turkish">Turkish</option>
+              <option value="english">English</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </div>
+          <div>
+            <input type="text" placeholder="Target Node">
+          </div>
+          <div class="example" dir="auto">Example: Alpha in Ancient Greek</div>
+          <div>
+            <select>
+              <option value="description" selected>Target language</option>
+              <option value="turkish">Turkish</option>
+              <option value="english">English</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </div>
+
+          <div>
+            <h4>Type of Edge:</h4>
+            <label class="radio-container">
+              <input type="radio" name="typeOfEdge" value="derivesFrom" checked="checked"> Derives from
+            </label>
+            <label class="radio-container">
+              <input type="radio" name="typeOfEdge" value="symbolOf"> Symbol of
+            </label>
+            <label class="radio-container">
+              <input type="radio" name="typeOfEdge" value="compoundOf"> Compound of
+            </label>
+          </div>
+          <div>
+            <input type="text" placeholder="Resource">
+          </div>
+          <div class="example" dir="auto">Example: Sevan Nişanyan's Elifin Öküzü.</div>
+        </div>
+        <div class="submit-footer">
+          <div>
+            <button type="reset">Reset</button>
+            <button>Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- modal submit -->
   <script src="js/main.js"></script>
 </body>
 

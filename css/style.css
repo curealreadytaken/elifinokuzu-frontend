@@ -80,6 +80,14 @@ header .container {
   background-size: 15px;
 }
 
+.header-right ul li #submit, #name {
+  display: none;
+}
+
+.header-right ul li #signup, #login {
+  display: block;
+}
+
 section .container {
   grid-template-columns: 25% 50% 25%;
   margin-top: 10px;
@@ -252,13 +260,13 @@ section .container {
 }
 
 .submit {
-  width: 400px;
+  width: 500px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 100%;
   border: 1px solid #707070;
   border-radius: 5px;
-  margin-top: 15px;
+  margin-top: 55px;
   margin-bottom: 15px;
   font-family: "Helvetica Neue", sans-sans-serif;
   background-color: #fefefe;
@@ -346,15 +354,15 @@ section .container {
   line-height: 1.3125;
 }
 
-input:invalid+span:after {
-  content: '✖';
-  border-bottom-color: rgb(224, 36, 94);
+.submit-body input[type=text]:focus {
+  border-bottom: 2px solid #34495E;
 }
 
-input:valid+span:after {
-  content: '✓';
-  color: #34495E;
+input:focus:invalid {
+  border-bottom: 2px solid rgb(224, 36, 94);
 }
+
+/* bu çalışmıyor... */
 
 .submit-body .example {
   line-height: calc(19.6875px);
@@ -415,5 +423,5 @@ input:valid+span:after {
   border: 1px solid #34495E;
   background-color: #34495E;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
