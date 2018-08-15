@@ -18,17 +18,17 @@
         <div class="header-content">
           <ul>
             <li>
-              <a href="">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="">About</a>
+              <a href="about.html">About</a>
             </li>
           </ul>
         </div>
       </div>
       <div class="header-middle">
         <div class="header-content">
-          <a href="#">
+          <a href="index.html">
             <img src="img/logo.png" alt="Logo">
           </a>
         </div>
@@ -40,12 +40,13 @@
               <input type="text" placeholder="Search">
             </li>
             <li>
-              <a href="">Sign up</a>
+              <a id="signup" href="">Sign up</a>
             </li>
             <li>
-              <a href="">Log in</a>
+              <a id="login" href="">Log in</a>
             </li>
           </ul>
+          <div class="clear"></div>
         </div>
       </div>
 
@@ -80,7 +81,7 @@
         </ul>
       </div>
       <!-- sidebar-languages -->
-      <div class="section-content">a</div>
+      <div class="section-content"></div>
       <!-- seciton-content -->
       <div class="sidebar-footer">
         <p>2018
@@ -99,7 +100,7 @@
             </a>
           </li>
         </ul>
-        <div class="signup">
+        <div id="divSignup" class="signup is-visible">
           <ul>
             <li>
               <input type="text" placeholder="username">
@@ -126,7 +127,7 @@
           </ul>
         </div>
         <!-- signup -->
-        <div class="login">
+        <div id="divLogin" class="login is-visible">
           <ul>
             <li>
               <input type="text" placeholder="username or email">
@@ -153,6 +154,7 @@
     </div>
     <!-- container -->
   </section>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
