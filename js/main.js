@@ -3,7 +3,7 @@ function myFunction() {
 }
 
 function myFunction2() {
-    document.querySelector("#divSignup").classList.toggle("is-visible");
+    document.getElementById("id02").style.display = "block";
 }
 function myFunction3() {
     document.getElementById("id01").style.display = "block";

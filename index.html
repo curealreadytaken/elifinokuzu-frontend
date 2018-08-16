@@ -48,7 +48,6 @@
               <a id="name" href="#">Ömer</a>
             </li>
           </ul>
-          <div class="clear"></div>
         </div>
       </div>
 
@@ -102,33 +101,7 @@
             </a>
           </li>
         </ul>
-        <div id="divSignup" class="signup">
-          <ul>
-            <li>
-              <input type="text" placeholder="username">
-            </li>
-            <li>
-              <input type="text" placeholder="email">
-            </li>
-            <li>
-              <input type="text" placeholder="password">
-            </li>
-            <li>
-              <input type="text" placeholder="password confirmation">
-            </li>
-            <li class="tips">
-              <p>* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus et eroseget efficitur.</p>
-              <p>* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus et eroseget efficitur.</p>
-              <p>* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus et eroseget efficitur.</p>
 
-            </li>
-
-            <li>
-              <button id="btnSignup" class="btnSignup" type="submit">Sign up</button>
-            </li>
-          </ul>
-        </div>
-        <!-- signup -->
         <div id="divLogin" class="login">
           <ul>
             <li>
@@ -219,6 +192,51 @@
     </div>
   </div>
   <!-- modal submit -->
+  <div id="id02" class="modal">
+    <form action="" method="post">
+      <div id="divSignup" class="signup animate">
+        <div class="submit-header">
+          <div>
+            <h3>Create your account</h3>
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+        </div>
+        <div class="signup-body">
+          <div>
+            <input type="text" placeholder="username">
+          </div>
+          <div>
+            <input type="text" placeholder="email">
+          </div>
+          <div>
+            <input type="text" placeholder="password">
+          </div>
+          <div>
+            <input type="text" placeholder="password confirmation">
+          </div>
+          <div class="tips">
+            <p>* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus et eroseget efficitur.</p>
+            <p>* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus et eroseget efficitur.</p>
+            <p>* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum cursus et eroseget efficitur.</p>
+          </div>
+          <div>
+
+          </div>
+
+          <!-- form -->
+        </div>
+        <!-- signup-body -->
+        <div class="signup-footer">
+          <div>
+            <button id="btnSignup" class="btnSignup" type="submit">Sign up</button>
+          </div>
+        </div>
+        <!-- footer -->
+      </div>
+      <!-- signup -->
+    </form>
+  </div>
+  <!-- modal -->
   <script src="js/main.js"></script>
 </body>
 
